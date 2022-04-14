@@ -300,25 +300,120 @@ button {
   transition: transform 1250ms var(--animation);
 
   background-color: var(--white_color);
-  background-image: linear-gradient(to bottom, #0082D1 40%, #FFD100 100%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 130, 209, 0.7) 40%,
+    rgba(255, 209, 0, 0.7) 100%
+  );
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
 .modal-header {
-  text-align: center;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
+  text-align: center;
   letter-spacing: 0.03em;
+
   color: var(--main_color);
-  margin-bottom: 12px;
 }
 
-.form-field {
+.form-name {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.form-label {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form-icon {
+  position: absolute;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 12px;
+  transform: translateY(70%);
+}
+
+.form-part {
   display: flex;
   flex-direction: column;
+}
+
+.form-textarea {
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  resize: none;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.checkbox-input {
+  margin-right: 8.4px;
+}
+
+.checkbox-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--mail_phone_desc);
+}
+
+.checkbox-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.form-btn {
+  display: block;
+  padding: 10px 55px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: var(--white_color);
+  background: var(--web_hover_button_color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
 }
 
 .backdrop.is-hidden .modal {
@@ -610,7 +705,6 @@ button {
 .footer > .container {
   display: flex;
   align-items: baseline;
-
 }
 
 .footer-webstudio {
@@ -725,11 +819,10 @@ button {
   fill: currentColor;
 }
 
-
 /*MAILING*/
 
 .mailing {
- margin-left: auto;
+  margin-left: auto;
 }
 
 .mailing-header {
@@ -742,7 +835,6 @@ button {
   text-transform: uppercase;
   color: var(--white_color);
 }
-
 
 .mailing-form {
   display: flex;

@@ -324,27 +324,46 @@
         <div class="modal">
           <h3 class="modal-header">Оставьте свои данные, мы вам перезвоним</h3>
           <form>
-            <div class="form-field">
-              <labale for="customer_name">Имя</labale>
-              <input type="text" name="name" id="customer_name" />
+            <p class="form-name">Имя</p>
+            <label for="" class="form-label">
+              <input type="text" class="form-input" />
+              <span>
+                <svg class="form-icon">
+                  <use href="./images/modal-icons.svg#icon-person" width="18"></use>
+                </svg>
+              </span>
+            </label>
+            <p class="form-name">Телефон</p>
+            <label for="" class="form-label">
+              <input type="text" class="form-input" />
+              <span>
+                <svg class="form-icon">
+                  <use href="./images/modal-icons.svg#icon-phone" width="18"></use>
+                </svg>
+              </span>
+            </label>
+            <p class="form-name">Почта</p>
+            <label for="" class="form-label">
+              <input type="text" class="form-input" />
+              <span>
+                <svg class="form-icon">
+                  <use href="./images/modal-icons.svg#icon-email" width="18"></use>
+                </svg>
+              </span>
+            </label>
+            <div class="form-part">
+              <label for="form-comment" class="form-name">Комментарий</label>
+              <textarea
+                name="comment"
+                id="form-comment"
+                placeholder="Введите текст"
+                class="form-textarea"
+              ></textarea>
             </div>
-            <div class="form-field">
-              <labale for="phone_number">Телефон</labale>
-              <input type="tel" name="phone_number" id="phone_number" />
-            </div>
-            <div class="form-field">
-              <labale for="customer_email">Почта</labale>
-              <input type="email" name="email" id="customer_email" />
-            </div>
-            <div class="form-field">
-              <label for="comment">Комментарий</label>
-              <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
-            </div>
-            <div>
-              <input type="checkbox" name="license" id="license">
-              <label for="license">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
-            </div>
-            <button type="submit">Отправить</button>
+            <label class="checkbox"
+              ><input type="checkbox" name="license" class="checkbox-input" /><p class="checkbox-text">Соглашаюсь с рассылкой и принимаю</p>
+              <a href="#" class="checkbox-link">Условия договора</a></label>
+              <button type="submit" class="form-btn">Отправить</button>  
           </form>
           <button class="button-close" data-modal-close>
             <svg class="modal-close-cross" width="18" height="18">
