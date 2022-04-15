@@ -322,34 +322,28 @@
       <!--Modal window-->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <h3 class="modal-header">Оставьте свои данные, мы вам перезвоним</h3>
+          <p class="modal-header">Оставьте свои данные, мы вам перезвоним</p>
           <form>
             <p class="form-name">Имя</p>
             <label for="" class="form-label">
               <input type="text" class="form-input" />
-              <span>
-                <svg class="form-icon">
-                  <use href="./images/modal-icons.svg#icon-person" width="18"></use>
-                </svg>
-              </span>
+              <svg class="form-icon">
+                <use href="./images/modal-icons.svg#icon-person" width="18"></use>
+              </svg>
             </label>
             <p class="form-name">Телефон</p>
             <label for="" class="form-label">
               <input type="text" class="form-input" />
-              <span>
-                <svg class="form-icon">
-                  <use href="./images/modal-icons.svg#icon-phone" width="18"></use>
-                </svg>
-              </span>
+              <svg class="form-icon">
+                <use href="./images/modal-icons.svg#icon-phone" width="18"></use>
+              </svg>
             </label>
             <p class="form-name">Почта</p>
             <label for="" class="form-label">
               <input type="text" class="form-input" />
-              <span>
-                <svg class="form-icon">
-                  <use href="./images/modal-icons.svg#icon-email" width="18"></use>
-                </svg>
-              </span>
+              <svg class="form-icon">
+                <use href="./images/modal-icons.svg#icon-email" width="18"></use>
+              </svg>
             </label>
             <div class="form-part">
               <label for="form-comment" class="form-name">Комментарий</label>
@@ -361,9 +355,11 @@
               ></textarea>
             </div>
             <label class="checkbox"
-              ><input type="checkbox" name="license" class="checkbox-input" /><p class="checkbox-text">Соглашаюсь с рассылкой и принимаю</p>
+              ><input type="checkbox" name="license" class="checkbox-input" />
+              <span class="checkbox-icon"></span>
+              <p class="checkbox-text">Соглашаюсь с рассылкой и принимаю &nbsp;</p>
               <a href="#" class="checkbox-link">Условия договора</a></label>
-              <button type="submit" class="form-btn">Отправить</button>  
+            <button type="submit" class="form-btn">Отправить</button>
           </form>
           <button class="button-close" data-modal-close>
             <svg class="modal-close-cross" width="18" height="18">

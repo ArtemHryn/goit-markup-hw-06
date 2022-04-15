@@ -336,6 +336,7 @@ button {
   margin-bottom: 10px;
 }
 
+
 .form-input {
   display: block;
   width: 100%;
@@ -345,6 +346,7 @@ button {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  transition: border 250ms var(--animation);
 }
 
 .form-icon {
@@ -355,6 +357,10 @@ button {
   top: 0;
   left: 12px;
   transform: translateY(70%);
+}
+
+.form-input:focus + .form-icon {
+  fill: #188ce8;
 }
 
 .form-part {
@@ -370,6 +376,19 @@ button {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  transition: border 250ms var(--animation);
+}
+
+.form-input:focus-within {
+  border: 1px solid var(--web_hover_button_color);
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-textarea:focus-within {
+  border: 1px solid var(--web_hover_button_color);
+  border-radius: 4px;
+  outline: none;
 }
 
 .checkbox {
@@ -380,7 +399,26 @@ button {
 }
 
 .checkbox-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.checkbox-icon {
   margin-right: 8.4px;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+
+
+  border-radius: 4px;
+  background-color: var(--white_color);
+  background-image: url(../images/unchecked-icon.svg);
+  transition: background-image 250ms var(--animation);
+}
+
+.checkbox-input:checked + .checkbox-icon {
+  background-image: url(../images/checked-icon.svg);
 }
 
 .checkbox-text {
@@ -396,7 +434,7 @@ button {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--web_hover_button_color);
 }
 
 .form-btn {
@@ -413,8 +451,14 @@ button {
   font-weight: 700;
 
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.88;
   letter-spacing: 0.06em;
+
+  transition: backgorund-color 250ms var(--animation);
+}
+
+.form-btn:hover, .form-btn:focus {
+  background-color: #188CE8;
 }
 
 .backdrop.is-hidden .modal {
@@ -911,7 +955,7 @@ button {
   border-radius: 4px;
   border-color: var(--port_buttons_and_team_background);
   cursor: pointer;
-  transition: background-color 2250ms var(--animation), color 250ms var(--animation),
+  transition: background-color 250ms var(--animation), color 250ms var(--animation),
     border-color 250ms var(--animation), box-shadow 250ms var(--animation);
 }
 
