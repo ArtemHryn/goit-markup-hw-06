@@ -490,11 +490,11 @@ button {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .modal-close-cross {
   fill: #000;
-  cursor: pointer;
 }
 
 /*Особенности*/
