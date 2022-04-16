@@ -425,9 +425,10 @@ button {
 .checkbox-input:checked + .checkbox-icon {
   background-image: url(../images/checked-icon.svg);
   border-color: var(--web_hover_button_color);
-  background-origin: padding-box;
+  background-origin: border-box;
   background-position: center;
   background-color: var(--web_hover_button_color);
+  background-size: contain;
 }
 
 .checkbox-text {
