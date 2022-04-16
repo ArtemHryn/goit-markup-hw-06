@@ -357,10 +357,11 @@ button {
   top: 0;
   left: 12px;
   transform: translateY(70%);
+  transition: fill 250ms var(--animation);
 }
 
 .form-input:focus + .form-icon {
-  fill: #188ce8;
+  fill: var(--web_hover_button_color);
 }
 
 .form-part {
@@ -470,7 +471,7 @@ button {
 }
 
 .form-btn:hover, .form-btn:focus {
-  background-color: #188CE8;
+  background-color: var(--web_hover_button_color);
 }
 
 .backdrop.is-hidden .modal {
