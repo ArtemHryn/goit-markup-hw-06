@@ -404,21 +404,30 @@ button {
   appearance: none;
 }
 
+.checkbox-input:focus + .checkbox-icon {
+  border-color: var(--web_hover_button_color);
+}
+
 .checkbox-icon {
   margin-right: 8.4px;
   display: inline-block;
   width: 16px;
   height: 15px;
 
-
-  border-radius: 4px;
+  border-radius: 2px;
   background-color: var(--white_color);
-  background-image: url(../images/unchecked-icon.svg);
-  transition: background-image 250ms var(--animation);
+  /* background-image: url(../images/unchecked-icon.svg); */
+  border: 2px solid var(--black_color);
+
+  transition: background-color 250ms var(--animation), border-color 250ms var(--animation);
 }
 
 .checkbox-input:checked + .checkbox-icon {
   background-image: url(../images/checked-icon.svg);
+  border-color: var(--web_hover_button_color);
+  background-origin: padding-box;
+  background-position: center;
+  background-color: var(--web_hover_button_color);
 }
 
 .checkbox-text {
